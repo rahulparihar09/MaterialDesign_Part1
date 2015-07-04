@@ -1,9 +1,12 @@
 package com.example.materialdesignone;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v4.util.Pair;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -17,6 +20,7 @@ import com.example.materialdesignone.fragment.FriendsFragment;
 import com.example.materialdesignone.fragment.HomeFragment;
 import com.example.materialdesignone.fragment.MessagesFragment;
 import com.example.materialdesignone.fragment.NavigationDrawerFragment;
+import com.example.materialdesignone.model.AppInfo;
 
 public class HomeActivity extends AppCompatActivity implements
         NavigationDrawerFragment.FragmentDrawerListener,
@@ -62,6 +66,7 @@ public class HomeActivity extends AppCompatActivity implements
 
         });
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
